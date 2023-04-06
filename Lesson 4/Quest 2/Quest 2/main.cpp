@@ -34,6 +34,7 @@ void append_to_dynamic_array(int* arr, int &logical_size, int &actual_size) {
 					array[i] = arr[i];
 				}
 
+				delete[] arr;
 				arr = array;
 				
 				arr[logical_size - 1] = added_element;
